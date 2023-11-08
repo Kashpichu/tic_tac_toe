@@ -1,1 +1,58 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Fluid Host for Win32"/><link rel="manifest" href="./manifest.json"/><title>Loop Component</title><script defer="defer" src="./static/js/main.cba6a850.js"></script><link href="./static/css/main.c47195de.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="animatedSplashScreen" hidden></div><div id="fluidElement"></div></body></html>
+<html lang="en">
+  <head> 
+
+    <link href="tictactoe.css"rel="stylesheet"/>
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <main class="background">
+      <section class="title">
+        <h1>Tic Tac Toe</h1>
+      </section>
+      <section class="display">
+        Player <span class="display-player playerX">X</span>'s turn
+      </section>
+      <section class="container">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+      </section>
+      <section class="display announcer hide"></section>
+      <section class="controls">
+        <button id="reset">Reset</button>
+        <button id="startNewRound">Start New Game</button>
+      </section>
+      <table style="border:1px;color:white" class="scorecard">
+       <tr>
+        <th>player X</th>
+        <th>player O</th>
+        <th>Tie</th>
+       </tr>
+       <tr>
+        <td><div class="xscore">0</div>
+          <div class="xscoreimages"></div>
+        </td>
+        <td><div class="oscore">0</div>
+          <div class="oscoreimages"></div>
+        </td>
+        <td><div class="tiescore">0</div>
+          <div class="tiescoreimages"></div>
+        </td>
+       </tr>
+
+      </table>
+       
+
+
+
+
+    </main>
+    <script src="tictactoe.js"></script>
+  </body>
+</html>
